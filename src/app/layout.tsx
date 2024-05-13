@@ -22,7 +22,6 @@ export default function RootLayout({
           colorPrimary: '#243A5A',
           colorBackground: '#f9fafb',
           fontSize: "16px",
-          spacingUnit: "18px",
         },
        }}
     >

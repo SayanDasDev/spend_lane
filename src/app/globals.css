@@ -56,10 +56,21 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border no-scrollbar;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground no-scrollbar;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
